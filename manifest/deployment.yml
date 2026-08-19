@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: deployment
+kind: Deployment
 metadata:
   name: mydeploy
 spec:
@@ -27,7 +27,7 @@ kind: Service
 metadata:
   name: mysrc
 spec:
-  type: Loadbalancer
+  type: LoadBalancer
   selector:
     app: eks
   ports:
